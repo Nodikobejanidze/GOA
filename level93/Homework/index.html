@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: orangered;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .box-container {
+            background-color: rgb(131, 131, 131);
+            border-radius: 10px;
+            width: 400px;
+            height: 400px;
+        }
+
+        .box {
+            background-color: wheat;
+            border-radius: 10px;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-container">
+        <div class="box"></div>
+    </div>
+    <script>
+        function BRO() {
+
+        let tX = setInterval(moveX, 1)
+        let pos = 0
+        const box = document.getElementsByClassName("box")[0]
+        }
+        function animationBox() {
+            function moveX() {
+            if(pos >= 300) {
+                clearInterval(tX)
+            } else {
+                pos++
+                box.style.left = pos + "px"
+            }
+        }
+    }
+
+    </script>
+</body>
+</html>

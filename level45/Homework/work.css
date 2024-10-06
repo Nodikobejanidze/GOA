@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.parent {
+    width: 1200px;
+    height: 1200px;
+    border: 5px solid red;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+
+
+.child{
+    background-color: green;
+    border: 3px solid blue;
+}
+
+
+
+
