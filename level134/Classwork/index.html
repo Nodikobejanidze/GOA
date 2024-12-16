@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration and Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    form {
+      margin-bottom: 20px;
+    }
+    input {
+      display: block;
+      margin: 10px 0;
+      padding: 8px;
+      width: 100%;
+      max-width: 300px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .message {
+      color: green;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Registration and Login</h1>
+
+<h2>Registration</h2>
+<form id="registration-form">
+  <input type="text" id="reg-name" placeholder="Enter your name" required>
+  <input type="email" id="reg-email" placeholder="Enter your email" required>
+  <button type="submit">Register</button>
+</form>
+<div id="reg-message" class="message"></div>
+
+<h2>Login</h2>
+<form id="login-form">
+  <input type="email" id="login-email" placeholder="Enter your email" required>
+  <input type="text" id="login-name" placeholder="Enter your name" required>
+  <button type="submit">Login</button>
+</form>
+<div id="login-message" class="message"></div>
+
+<script>
+  
+  const accounts = JSON.parse(localStorage.getItem('accounts')) || [];
+
+  
+  document.getElementById('registration-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('reg-name').value.trim();
+    const email = document.getElementById('reg-email').value.trim();
+
+
+    const existingAccount = accounts.find(account => account.email === email);
+    if (existingAccount) {
+      document.getElementById('reg-message').textContent = 'An account with this email already exists.';
+      return;
+    }
+
+   
+    const newAccount = { name, email };
+    accounts.push(newAccount);
+
+    localStorage.setItem('accounts', JSON.stringify(accounts));
+
+    document.getElementById('reg-message').textContent = 'Registration successful!';
+    document.getElementById('registration-form').reset();
+  });
+
+  
+  document.getElementById('login-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('login-name').value.trim();
+    const email = document.getElementById('login-email').value.trim();
+
+    
+    const existingAccount = accounts.find(account => account.email === email && account.name === name);
+    if (existingAccount) {
+      document.getElementById('login-message').textContent = 'Login successful!';
+    } else {
+      document.getElementById('login-message').textContent = 'Invalid name or email. Please try again.';
+    }
+
+    document.getElementById('login-form').reset();
+  });
+</script>
+
+</body>
+</html>
