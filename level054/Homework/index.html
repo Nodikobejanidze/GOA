@@ -1,12 +1,148 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-<script src="script.js"></script>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Sign In
+  </title>
+  <style>
+   body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: 'Roboto', sans-serif;
+            background-color: #d3dce6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            display: flex;
+            width: 80%;
+            height: 80%;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .image-section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f5f5f5;
+        }
+        .image-section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .form-section {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .form-section .settings-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 20px;
+            color: #6c757d;
+        }
+        .form-section .logo {
+            margin-bottom: 20px;
+        }
+        .form-section h2 {
+            margin-bottom: 20px;
+            font-weight: 500;
+            color: #333;
+        }
+        .form-section .input-group {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .form-section .input-group input {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #495057;
+        }
+        .form-section .input-group input:focus {
+            outline: none;
+            border-color: #80bdff;
+        }
+        .form-section .forgot-password {
+            align-self: flex-end;
+            margin-bottom: 20px;
+            color: #007bff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .form-section .forgot-password:hover {
+            text-decoration: underline;
+        }
+        .form-section .sign-in-btn {
+            width: 100%;
+            padding: 15px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .form-section .sign-in-btn:hover {
+            background-color: #0056b3;
+        }
+        .form-section .sign-up-link {
+            margin-top: 20px;
+            color: #6c757d;
+            font-size: 14px;
+        }
+        .form-section .sign-up-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .form-section .sign-up-link a:hover {
+            text-decoration: underline;
+        }
+  </style>
+ </head>
+ <body>
 
-</body>
+  <div class="container">
+   <div class="image-section">
+    <img alt="Abstract architectural design of a modern building with repetitive balconies and white color scheme." height="800" src="https://storage.googleapis.com/a1aa/image/0uC71GxNI7KpGtWgBOLKi99QGWie8BZ3dr6FXd1Q5lIx9hBKA.jpg" width="800"/>
+   </div>
+   <div class="form-section">
+    <i class="fas fa-cog settings-icon">
+    </i>
+    <div class="logo">
+     <i class="fas fa-v">
+     </i>
+    </div>
+    <h2>Sign in</h2>
+    <div class="input-group">
+     <input placeholder="E-mail Address *" type="email"/>
+    </div>
+    <div class="input-group">
+     <input placeholder="Password *" type="password"/>
+    </div>
+    <a class="forgot-password" href="#">Forgot password?
+    </a>
+    <button class="sign-in-btn"> Sign in
+    </button> 
+    <div class="sign-up-link">
+    Don't have an account?<a href="#"> Sign Up!</a>
+    </div>
+   </div>
+  </div>
+ </body>
 </html>

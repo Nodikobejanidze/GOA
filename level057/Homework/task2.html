@@ -1,0 +1,203 @@
+<html>
+ <head>
+  <title>
+   Sign Up Page
+  </title>
+  <style>
+   body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            display: flex;
+            width: 80%;
+            max-width: 1200px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            
+        }
+
+        .container img{
+            border-radius: 10%;
+        }
+        .left {
+            flex: 1;
+            background-color: #f0f0f0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .left img {
+            max-width: 100%;
+            height: auto;
+        }
+        .left h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .left h1 span {
+            color: #6c63ff;
+            font-weight: 700;
+        }
+        .right {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .right .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .right .header a {
+            color: #6c63ff;
+            text-decoration: none;
+        }
+        .right h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        .right p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .right form {
+            display: flex;
+            flex-direction: column;
+        }
+        .right form input {
+            padding: 15px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .right form input:focus {
+            outline: none;
+            border-color: #6c63ff;
+        }
+        .right form .password-strength {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .right form .password-strength div {
+            width: 20%;
+            height: 5px;
+            background-color: #ccc;
+        }
+        .right form .password-strength div.active {
+            background-color: #6c63ff;
+        }
+        .right form button {
+            padding: 15px;
+            background-color: #6c63ff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .right form button:hover {
+            background-color: #5a54d6;
+        }
+        .right .social-login {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .right .social-login button {
+            flex: 1;
+            padding: 10px;
+            margin: 0 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            cursor: pointer;
+        }
+        .right .social-login button i {
+            margin-right: 5px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .left, .right {
+                padding: 20px;
+            }
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="left">
+    <h1>
+     A problem well stated
+     <br/>
+     Is a problem
+     <span>
+      half solved
+     </span>
+    </h1>
+    <img src="https://cdn.prod.website-files.com/5f5f0b64df8598481b1a73b0/5fa9e3a2d85fd63d48179509_GettyImages-1045529768-p-800.jpeg"/>
+   </div>
+   <div class="right">
+    <div class="header">
+     <h2>
+      Sign up
+     </h2>
+     <a href="#">
+      Already a user? Sign in
+     </a>
+    </div>
+    <div class="social-login">
+     <button>
+      <i class="fab fa-google">
+      </i>
+      Google
+     </button>
+     <button>
+      <i class="fab fa-facebook-f">
+      </i>
+      Facebook
+     </button>
+    </div>
+    <p>
+     Lorem ipsum dolor sit amet, consectetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+    </p>
+    <form>
+     <input placeholder="Full name" type="text"/>
+     <input placeholder="Email Address" type="email"/>
+     <input placeholder="Password" type="password"/>
+     <div class="password-strength">
+      <div>
+      </div>
+      <div>
+      </div>
+      <div>
+      </div>
+      <div>
+      </div>
+     </div>
+     <input placeholder="Confirm Password" type="password"/>
+     <button type="submit">
+      Create Account
+     </button>
+    </form>
+   </div>
+  </div>
+ </body>
+</html>

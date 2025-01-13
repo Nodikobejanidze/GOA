@@ -1,0 +1,108 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  
+    <style>
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background-color: #f3f4fe;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+      }
+      .navbar a {
+        text-decoration: none;
+        color: #333;
+        margin: 0 15px;
+        font-weight: 500;
+      }
+      .navbar a.get-started {
+        background-color: #6c63ff;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 25px;
+      }
+      .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px 0;
+      }
+      .hero-text {
+        max-width: 50%;
+      }
+      .hero-text h1 {
+        font-size: 48px;
+        color: #333;
+        margin-bottom: 20px;
+      }
+      .hero-text p {
+        font-size: 16px;
+        color: #666;
+        margin-bottom: 30px;
+      }
+      .hero-text .btn {
+        background-color: #6c63ff;
+        color: #fff;
+        padding: 15px 30px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      .hero-image img {
+        max-width: 100%;
+      }
+      @media (max-width: 768px) {
+        .hero {
+          flex-direction: center;
+        }
+        .hero-text,
+        .hero-image {
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#">
+            YOUR
+            <span style="font-weight: 600"> WEBSITE </span>
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">About us</a>
+          <a href="#">Work</a>
+          <a href="#">Info</a>
+          <a class="get-started" href="#">Get Started</a>
+        </div>
+      </nav>
+      <div class="hero">
+        <div class="hero-text">
+          <h1>Website Design</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget
+            libero feugiat, faucibus libero id, scelerisque quam
+          </p>
+          <a class="btn" href="#"> Button name </a>
+        </div>
+        <div class="hero-image">
+          <img src="https://business.adobe.com/blog/basics/media_1132acbaaf72680b84753f2d51880603efeae51b7.png?width=750&format=png&optimize=medium" />  
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <html>
+    </div>
+    <nav class="profile-nav">
+      <a href="index.html">About</a>
+      <a href="friend.html">Friends</a>
+      <a href="Photos.html">Photos</a>
+      <a href="#">More</a>
+    </nav>
+  </div>
+        <head>
+         <title>
+          Friends List
+         </title>
+         <style>
+          body {
+                   font-family: Arial, sans-serif;
+                   background-color: #f0f2f5;
+                   margin: 0;
+                   padding: 0;
+               }
+               .container {
+                   width: 100%;
+                   max-width: 1200px;
+                   margin: 0 auto;
+                   padding: 20px;
+               }
+               .header {
+                   display: flex;
+                   justify-content: space-between;
+                   align-items: center;
+                   padding: 10px 0;
+               }
+               .header h1 {
+                   font-size: 24px;
+                   margin: 0;
+               }
+               .header input {
+                   padding: 5px 10px;
+                   font-size: 16px;
+                   border: 1px solid #ccc;
+                   border-radius: 5px;
+               }
+               .nav {
+                   display: flex;
+                   justify-content: space-between;
+                   align-items: center;
+                   margin: 20px 0;
+               }
+               .nav a {
+                   text-decoration: none;
+                   color: #1877f2;
+                   font-size: 16px;
+                   margin-right: 20px;
+               }
+               .nav a.active {
+                   color: #1877f2;
+                   border-bottom: 2px solid #1877f2;
+                   padding-bottom: 5px;
+               }
+               .friends-list {
+                   background-color: #fff;
+                   border-radius: 10px;
+                   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+                   padding: 20px;
+               }
+               .friend-item {
+                   display: flex;
+                   align-items: center;
+                   padding: 10px 0;
+                   border-bottom: 1px solid #f0f2f5;
+               }
+               .friend-item:last-child {
+                   border-bottom: none;
+               }
+               .friend-item img {
+                   width: 50px;
+                   height: 50px;
+                   border-radius: 50%;
+                   margin-right: 20px;
+               }
+               .friend-item .info {
+                   flex-grow: 1;
+               }
+               .friend-item .info h3 {
+                   margin: 0;
+                   font-size: 18px;
+               }
+               .friend-item .info p {
+                   margin: 5px 0 0;
+                   color: #606770;
+               }
+               .friend-item .actions {
+                   display: flex;
+                   align-items: center;
+               }
+               .friend-item .actions i {
+                   font-size: 20px;
+                   color: #606770;
+                   cursor: pointer;
+
+                   
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f533;
+  }
+  
+  .profile-header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .cover-photo img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .profile-info {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-top: -50px;
+  }
+  
+  .profile-info h1 {
+    margin: 10px 0 5px;
+  }
+  
+  .profile-info p {
+    color: gray;
+    font-size: 14px;
+  }
+
+                
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f533;
+  }
+  
+  .profile-header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .cover-photo img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .profile-info {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-top: -50px;
+  }
+  
+  .profile-info h1 {
+    margin: 10px 0 5px;
+  }
+  
+  .profile-info p {
+    color: gray;
+    font-size: 14px;
+  }
+  
+  .profile-nav {
+    display: flex;
+    justify-content: center;
+    background-color: #f7f7f7;
+    padding: 10px 0;
+  }
+  
+  .profile-nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #1877f2;
+    font-weight: bold;
+  }
+  
+  .profile-nav a:hover {
+    text-decoration: underline;
+  }
+  
+
+                   
+               
+         </style>
+        </head>
+        <body>
+         <div class="container">
+          <div class="header">
+           <h1>
+            მეგობრები
+           </h1>
+           <input placeholder="ძებნა" type="text"/>
+          </div>
+          <div class="nav">
+           <a class="active" href="#">
+            ყველა მეგობარი
+           </a>
+           <a href="#">
+            ახლახანს დამატებული
+           </a>
+           <a href="#">
+            დაბადების დღეები
+           </a>
+           <a href="#">
+            გთხოვთ / უარყოფილი თხოვნები
+           </a>
+           <a href="#">
+            ჯგუფები / ორგანიზაციები
+           </a>
+           <a href="#">
+            მეგობრების სიები
+           </a>
+           <a href="#">
+            Invite friends
+           </a>
+          </div>
+          <div class="friends-list">
+           <div class="friend-item">
+            <img alt="Profile picture of Buba Ebralidze" height="50" src="https://scontent.ftbs6-2.fna.fbcdn.net/v/t39.30808-6/449510557_501430655600571_1193915414091147078_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=M2k0FH2tsdkQ7kNvgFmchXo&_nc_oc=AdgoBk2a2h09tnMsTnz_NDGoFt_Yh0uqHtzj1702SS0xxs2RxrzUFn9K8lXz-UZ4UfQ&_nc_zt=23&_nc_ht=scontent.ftbs6-2.fna&_nc_gid=AhwB_LENQzNxOzBeEOlTonS&oh=00_AYCThqkoebik_Amxr8y3oUueTGwDgZWci4Q0g10-GCXIyQ&oe=6784548E" width="50"/>
+            <div class="info">
+             <h3>
+              Buba Ebralidze
+             </h3>
+             <p>
+              22 საერთო მეგობარი
+             </p>
+            </div>
+            <div class="actions">
+             <i class="fas fa-ellipsis-h">
+             </i>
+            </div>
+           </div>
+           <div class="friend-item">
+            <img alt="Profile picture of Nika Malakmadze" height="50" src="https://scontent.ftbs6-2.fna.fbcdn.net/v/t39.30808-1/448685728_971237494501306_6825894637545865684_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=100&ccb=1-7&_nc_sid=e99d92&_nc_ohc=0kEdjjmhPokQ7kNvgHpmK-c&_nc_oc=Adh1RtrfkvEHQ20091wpLFJByZ77wkjhu34GOyF7txIbo8V5YS4hPO2yBkXvRBRfy8c&_nc_zt=24&_nc_ht=scontent.ftbs6-2.fna&_nc_gid=AjuxCJC1aK0A_0Kpou6aZ8t&oh=00_AYAAOVpHm603x6OUMoxt8Tlxhh5kALmwYGJcSCN2U2ybAg&oe=678443BB" width="50"/>
+            <div class="info">
+             <h3>
+              Nika Malakmadze
+             </h3>
+             <p>
+              17 საერთო მეგობარი
+             </p>
+            </div>
+            <div class="actions">
+             <i class="fas fa-ellipsis-h">
+             </i>
+            </div>
+           </div>
+           <div class="friend-item">
+            <img alt="Profile picture of Nika Keshelava" height="50" src="https://scontent.ftbs6-2.fna.fbcdn.net/v/t39.30808-1/468299859_542306438777207_8421424349304221225_n.jpg?stp=c81.0.1366.1366a_dst-jpg_s200x200_tt6&_nc_cat=110&ccb=1-7&_nc_sid=e99d92&_nc_ohc=PNBubP4bWQgQ7kNvgELi8Y5&_nc_oc=AdgijRxxgD1Bf557prULMpKGZEweVxCToSXawMj-bRY_NJ77c1W5w0v-MyD5HS3_k-g&_nc_zt=24&_nc_ht=scontent.ftbs6-2.fna&_nc_gid=Ag8BlZ0JOlFvsuHRrwbtpyp&oh=00_AYC9s5aajsK8q_9cio-SdlseCJ7X59CIGibPFDbx5wZQgQ&oe=6784571A" width="50"/>
+            <div class="info">
+             <h3>
+              Nika Keshelava
+             </h3>
+             <p>
+              118 საერთო მეგობარი
+             </p>
+            </div>
+            <div class="actions">
+             <i class="fas fa-ellipsis-h">
+             </i>
+            </div>
+           </div>
+           <div class="friend-item">
+            <img alt="Profile picture of Bagrationi Mariam" height="50" src="https://scontent.ftbs6-2.fna.fbcdn.net/v/t39.30808-1/471678179_1726436364801624_4334188389775860262_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=104&ccb=1-7&_nc_sid=e99d92&_nc_ohc=O-JsdZT4pCQQ7kNvgHtCpG4&_nc_oc=AdjrspeJl-I4p-IHN4vWnONieF2sVMrR4N8D1wgEglMD32oc4KUUR4-tovN42i_3tb8&_nc_zt=24&_nc_ht=scontent.ftbs6-2.fna&_nc_gid=AksSQAG6JlpJQOI8ukfxr4t&oh=00_AYDxf8hcRYdUYYUP9yVpTkpd0s-YwS5jlyJEdTw1izEhHQ&oe=67845E0A" width="50"/>
+            <div class="info">
+             <h3>
+              Bagrationi Mariam
+             </h3>
+             <p>
+              32 საერთო მეგობარი
+             </p>
+            </div>
+            <div class="actions">
+             <i class="fas fa-ellipsis-h">
+             </i>
+            </div>
+           </div>
+           <div class="friend-item">
+            <img alt="Profile picture of თათია ჩიქავა" height="50" src="https://scontent.ftbs6-2.fna.fbcdn.net/v/t39.30808-1/462773694_544302701703944_4055138848388836814_n.jpg?stp=cp6_dst-jpg_s200x200_tt6&_nc_cat=104&ccb=1-7&_nc_sid=e99d92&_nc_ohc=FdVNRz6ARgQQ7kNvgHsuilC&_nc_oc=Adir45AlW7Q5kUqSNNLYTPmr9VqBuYzlDTiVrVln1IPuM0XdQVBt956A6xPH3LTqPMw&_nc_zt=24&_nc_ht=scontent.ftbs6-2.fna&_nc_gid=Aaf7ber9DanIANTsvZxWIrD&oh=00_AYAQJgnY6pkkT-nuvBw4Eq8JPax37AwPYz54EmMpZXIgfA&oe=67846962" width="50"/>
+            <div class="info">
+             <h3>
+              თათია ჩიჩუა
+             </h3>
+             <p>
+              33 საერთო მეგობარი
+             </p>
+            </div>
+            <div class="actions">
+             <i class="fas fa-ellipsis-h">
+             </i>
+            </div>
+           </div>
+           <div class="friend-item">
+            <img alt="Profile picture of Irakli Cexcladze" height="50" src="https://scontent.ftbs6-2.fna.fbcdn.net/v/t39.30808-6/471665079_122386868936001171_8483582896420263370_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=bb5EEA_GePoQ7kNvgGdvzGc&_nc_oc=AdguDJFKwTtWkuRy4876rRLR0WTErU8IEznMI1d6WaNyzwtOqPr8JfvPXPTUDugNGRs&_nc_zt=23&_nc_ht=scontent.ftbs6-2.fna&_nc_gid=AMPVpy2Fnc-ES-IIb-o7K3T&oh=00_AYD54tR-OLJvgoKlOFfEPvYCyJHSz-3C9nFFUZzZMaUBow&oe=67844FD7" width="50"/>
+            <div class="info">
+             <h3>
+              Irakli Cexcladze
+             </h3>
+             <p>
+              4 საერთო მეგობარი
+             </p>
+            </div>
+            <div class="actions">
+             <i class="fas fa-ellipsis-h">
+             </i>
+            </div>
+           </div>
+           <div class="friend-item">
+            <img alt="Profile picture of Zuka Abashidze" height="50" src="https://scontent.ftbs6-2.fna.fbcdn.net/v/t39.30808-6/452566388_794603222878116_3527492546005325847_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=zNvDxJ2W9CQQ7kNvgHt2EJx&_nc_oc=AdiomGgIN8CfLBkM0BKBOW3e86xPAewY1xoX6YzXYof2Y20-9vRRxk1KyJxo8UBGZBY&_nc_zt=23&_nc_ht=scontent.ftbs6-2.fna&_nc_gid=AjVApD4XqBv31KimdNlHHQb&oh=00_AYC_sag9tkUtk8s3INJMWmEzWLx_aIIrKVzAJKXMwdqQBg&oe=67845EA5" width="50"/>
+            <div class="info">
+             <h3>
+              Zuka Abashidze
+             </h3>
+             <p>
+              96 საერთო მეგობარი
+             </p>
+            </div>
+            <div class="actions">
+             <i class="fas fa-ellipsis-h">
+             </i>
+            </div>
+           </div>
+           <div class="friend-item">
+            <img alt="Profile picture of Luka Gurgenidze" height="30" src="https://scontent.ftbs6-2.fna.fbcdn.net/v/t39.30808-6/432420077_2368189550044942_23770386015147613_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=KdEClS4Y7QMQ7kNvgGoHmJJ&_nc_oc=AdiWI0jdBsDyxJOHqeUE9djjNSCnG_0YVZAl8ENcsJOrY2OuDqnJlAB1f9bjZJuF53I&_nc_zt=23&_nc_ht=scontent.ftbs6-2.fna&_nc_gid=A9oL4AsPRxSVnJoH4x_eszN&oh=00_AYCkR_AsfKqif-3wZOkYN4Ju072PRQciDW1xxrAGC8zpmg&oe=67845804" width="50"/>
+            <div class="info">
+             <h3>
+              Luka Gurgenidze
+             </h3>
+             <p>
+              62 საერთო მეგობარი
+             </p>
+            </div>
+            <div class="actions">
+             <i class="fas fa-ellipsis-h">
+             </i>
+            </div>
+           </div>
+          </div>
+         </div>
+        </body>
+       </html>
+       
+
+   
+</body>
+</html>
+
+
