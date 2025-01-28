@@ -1,0 +1,54 @@
+.IPhone {
+    margin-left: 25%;
+    margin-top: 10%;
+    position: relative;
+}
+
+.IPhone img {
+    width: 80em;
+    height: 45em;
+    border-radius: 25px;
+}
+
+.apple-logo {
+    width: 5em;
+    height: 5em;
+    background-color: black; 
+    background-size: cover;
+    position: absolute;
+    top: 20%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.loading-line {
+    width: 60%;
+    height: 5px;
+    background-color: #e0e0e0;
+    position: absolute;
+    top: 85%;
+    left: 15%;
+    overflow: hidden;
+    border-radius: 2.5px;
+}
+
+
+.loading-line::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+    background-color: #ffffff;
+    animation: loading-animation 2s infinite;
+}
+
+@keyframes loading-animation {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
