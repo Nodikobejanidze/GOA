@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Paragraph Modification</title>
+    <style>
+        #uniqueParagraph {
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
-    <script src="script.js"></script>
+    <p id="uniqueParagraph">This is the first paragraph.</p>
+    <p>This is the second paragraph.</p>
+
+    <script>
+        let paragraph = document.getElementById("uniqueParagraph");
+        paragraph.textContent = "Modified paragraph!";
+        paragraph.style.backgroundColor = "lightblue";
+        paragraph.style.color = "red";
+    </script>
 </body>
 </html>

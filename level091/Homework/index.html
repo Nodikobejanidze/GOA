@@ -1,27 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-    <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-        <li>6</li>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
 
-    </ul>   
-    <button onclick="beboslobiani()">Click </button>
-    <script src="classwork.js"></script>
-    <div id="demo">
-        <p id="p1">This is A Text</p>
-    </div>
+  <title>Frontend Mentor | Age calculator app</title>
 </head>
 <body>
-    
+  <div id="wrapper">
+    <form id="dateForm">
+      <div class="dateInput">
+        <label class="inputLabel" for="day">Day</label>
+        <br>
+        <input type="text" name="Day" id="day" placeholder="DD">
+        <br>
+        <label class="error-label" for="day" id="dayError"></label>
+      </div>
+      <div class="dateInput">
+        <label class="inputLabel" for="month">Month</label>
+        <br>
+        <input type="text" name="Month" id="month" placeholder="MM">
+        <br>
+        <label class="error-label" for="month" id="monthError"></label>
+      </div>
+      <div class="dateInput">
+        <label class="inputLabel" for="year">Year</label>
+        <br>
+        <input type="text" name="Year" id="year" placeholder="YYYY">
+        <br>
+        <label class="error-label" for="year" id="yearError"></label>
+      </div>   
+    </form>
+    <div id="splitter">
+      <hr>
+      <button id="submit"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg></button>
+    </div>
+    <div id="dateDisplayWrapper">
+      <div class="dateDisplay">
+        <p id="yearsText" class="dateTime">--</p>
+        <p>years</p>
+      </div>
+      <div class="dateDisplay">
+        <p id="monthsText" class="dateTime">--</p>
+        <p>months</p>
+      </div>
+      <div class="dateDisplay">
+        <p id="daysText" class="dateTime">--</p>
+        <p>days</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Nodiko Bejanidze</a>.
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

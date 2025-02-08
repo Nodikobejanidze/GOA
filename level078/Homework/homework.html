@@ -1,11 +1,25 @@
+<!--შექმენით პარაგრაფი, რომლის საწყისი ტექსტი იქნება 0. მის ქვემოთ შექმენით ერთი ღილაკი, რომლის ყოველ დაკლიკებაზე counter ცვლადს ერთი მოემატება და ეს რიცხვი გახდება პარაგრაფის textcontent-->
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <h1>No homework</h1>
+    <p id="counter">0</p>
+    <button id="increaseButton">Count</button>
+
+    <script>
+        let counter = 0;
+        const counterParagraph = document.getElementById('counter');
+        const button = document.getElementById('increaseButton');
+
+        button.addEventListener('click', () => {
+            counter++;
+            counterParagraph.textContent = counter;
+        });
+    </script>
 </body>
 </html>
