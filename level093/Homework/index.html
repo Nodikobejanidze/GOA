@@ -1,61 +1,44 @@
+<!--Project: To-Do List Application
+Key Features:
+Add Tasks
+
+Allow users to type a task and click "Add" to add it to the list.
+Each task should have a checkbox to mark it as completed.
+Delete Tasks
+
+Users can delete tasks from the list with a "Delete" button next to each task.
+Mark Task as Completed
+
+Users can click a checkbox next to each task to mark it as completed. Completed tasks will have a different style (e.g., strike-through text).
+Clear All Tasks
+
+Add a button that allows users to remove all tasks at once.
+Save Tasks to Local Storage
+
+Save tasks in the browser’s localStorage so that when the page is reloaded, the tasks remain.
+Tools and Concepts:
+Arrow Functions for handling events (e.g., adding and deleting tasks).
+DOM Manipulation for creating, deleting, and modifying list items (document.createElement, appendChild, innerHTML, etc.).
+Event Listeners for capturing user interactions (e.g., adding tasks or clicking checkboxes).
+Local Storage for persistent data (optional, but great for practice).-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animations</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: orangered;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        .box-container {
-            background-color: rgb(131, 131, 131);
-            border-radius: 10px;
-            width: 400px;
-            height: 400px;
-        }
-
-        .box {
-            background-color: wheat;
-            border-radius: 10px;
-            width: 100px;
-            height: 100px;
-        }
-    </style>
+    <title>Document</title>
 </head>
 <body>
-    <div class="box-container">
-        <div class="box"></div>
-    </div>
-    <script>
-        function BRO() {
+    <form>
+        <input type="text" name="item" placeholder="Add Task" required/>
 
-        let tX = setInterval(moveX, 1)
-        let pos = 0
-        const box = document.getElementsByClassName("box")[0]
-        }
-        function animationBox() {
-            function moveX() {
-            if(pos >= 300) {
-                clearInterval(tX)
-            } else {
-                pos++
-                box.style.left = pos + "px"
-            }
-        }
-    }
+        <button type="submit">Add</button>
+    </form>
 
-    </script>
+    <ul id="Add Task"></ul>
+
+    
+    <script src="script.js"></script>
 </body>
 </html>
